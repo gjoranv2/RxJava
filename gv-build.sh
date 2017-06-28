@@ -3,7 +3,10 @@
 set -e
 set -x
 
-#free -m
+if [ "$(uname)" != "Darwin" ]; then
+    free -m
+fi
+
 df -h
 
 ./gradlew build
