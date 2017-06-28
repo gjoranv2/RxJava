@@ -3,7 +3,7 @@
 set -e
 set -x
 
-#free -m
+free -m
 df -h
 
 ./gradlew build
